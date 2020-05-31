@@ -1,6 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 public class Dealership extends JFrame {
  
  private JLabel head;	
@@ -23,7 +24,7 @@ public class Dealership extends JFrame {
 	
 	JPanel panel = new JPanel();               //Center Panel for search boxes
 	add(panel, BorderLayout.CENTER);
-	
+	panel.setLayout(null);
 	JPanel panelRight = new JPanel();  
 	add(panelRight, BorderLayout.EAST);
 	panelRight.add(new JButton("Login"));
@@ -31,13 +32,14 @@ public class Dealership extends JFrame {
 	JButton colorS = new JButton("Search By Color");
 
 	JButton modelS = new JButton("Search By Model");
-	JButton l = new JButton("");
 	JLabel  msg = new JLabel("Searching by: ");
-	msg.setBounds(500, 500,100,100);
+	
 	panel.add(colorS);
 	panel.add(modelS);
 	panel.add(msg);
-    
+	colorS.setBounds(50,20,200,50);
+	modelS.setBounds(250,20,200,50);
+	msg.setBounds(450,0,100,100);
  
 
 	 
