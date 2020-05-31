@@ -33,7 +33,7 @@ public class Dealership extends JFrame {
 
 	JButton modelS = new JButton("Search By Model");
 	JLabel  msg = new JLabel("Searching by: ");
-	
+	//panel
 	panel.add(colorS);
 	panel.add(modelS);
 	panel.add(msg);
